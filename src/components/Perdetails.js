@@ -18,23 +18,23 @@ export class Perdetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="hello user"></AppBar>
+                    <AppBar title="YOUR DETAILS PLEZ"></AppBar>
                     <TextField 
-                    hintText="enter you occupation"
+                    hintText="Occupation"
                     floatingLabelFixed="occupation"
                     onChange={handleChange('occupation')}
                     defaultValue={value.occupation}
                     />
                     <br/>
                     <TextField 
-                    hintText="Enter your city"
+                    hintText="City"
                     floatingLabelFixed="city"
                     onChange={handleChange('city')}
                     defaultValue={value.city}
                     />
                     <br/>
                     <TextField 
-                    hintText="enter your bio"
+                    hintText="Bio"
                     floatingLabelFixed="bio"
                     onChange={handleChange('bio')}
                     defaultValue={value.bio}

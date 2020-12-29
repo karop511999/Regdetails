@@ -13,7 +13,7 @@ export class Mainpage extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="hello user" />
+                    <AppBar title="WELCOME TO MY WEB" />
                     <RaisedButton 
                     label="REGISTER"
                     primary={true}

@@ -14,23 +14,23 @@ export class Userdetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="hello user"></AppBar>
+                    <AppBar title="HELLO USER"></AppBar>
                     <TextField 
-                    hintText="enter you first name"
+                    hintText="First name"
                     floatingLabelFixed="firstname"
                     onChange={handleChange('firstname')}
                     defaultValue={value.firstname}
                     />
                     <br/>
                     <TextField 
-                    hintText="Enter your last name"
+                    hintText="Last name"
                     floatingLabelFixed="last name"
                     onChange={handleChange('lastname')}
                     defaultValue={value.lastname}
                     />
                     <br/>
                     <TextField 
-                    hintText="enter your emaail"
+                    hintText="Emaail"
                     floatingLabelFixed="email"
                     onChange={handleChange('email')}
                     defaultValue={value.email}
