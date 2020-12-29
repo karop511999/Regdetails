@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Mainpage from './Mainpage'
 import Userdetails from './Userdetails'
 import Perdetails from './Perdetails'
 import Confirm from './Confirm'
@@ -40,6 +41,14 @@ export class Userform extends Component {
         switch(step) {
             case 1:
                 return(
+                    <Mainpage
+                    nextStep={this.nextStep} 
+                    handleChange={this.handleChange}
+                    value={value}
+                    />
+                )
+            case 2:
+                return(
                     <Userdetails
                     nextStep={this.nextStep} 
                     handleChange={this.handleChange}
@@ -47,7 +56,7 @@ export class Userform extends Component {
                     />
                 )
 
-            case 2:
+            case 3:
                 return(
                     <Perdetails 
                     nextStep={this.nextStep}
@@ -56,7 +65,7 @@ export class Userform extends Component {
                     value={value}
                     />
                     )
-            case 3:
+            case 4:
                 return(
                    <Confirm 
                    nextStep={this.nextStep}
@@ -65,7 +74,7 @@ export class Userform extends Component {
                    value={value}
                    />
                 )
-            case 4:
+            case 5:
                     return(
                        <Sucess 
                        nextStep={this.nextStep}

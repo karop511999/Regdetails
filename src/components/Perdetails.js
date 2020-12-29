@@ -54,7 +54,7 @@ export class Perdetails extends Component {
                     />
                 </React.Fragment>
             </MuiThemeProvider>
-        )
+        );
     }
 }
 
